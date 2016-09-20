@@ -16,7 +16,7 @@ class Board
   end
 
   def valid_move?(start_pos)
-    unless (1..6).include?(start_pos) || (7..12).include?(start_pos)
+    unless (0..5).include?(start_pos) || (7..12).include?(start_pos)
       raise "Invalid starting cup"
     end
   end
