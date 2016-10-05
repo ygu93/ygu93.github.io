@@ -1,10 +1,24 @@
 <html>
   <head>
-  <title> Yue Gu Recipe </title>
+  <title> Prime Rib Recipe </title>
+  <meta name="description" content="A simple and delicious recipe for prime rib">
+  <meta charset = "utf-8">
+  <link rel="stylesheet" href="css_reset.css" type= "text/css">
+  <script type="text/javascript" src="external_javascript_example.js"/>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12345678-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
   </head>
   <body>
     <header>
-      <h1> Prime rib </h1>
       <img src="https://trademarks.justia.com/media/image.php?serial=86444706"/>
       <nav>
         <ul>
@@ -60,6 +74,34 @@ Once the roast has reached the temperature you want, remove it from the oven and
       <li> Cut away the strings that were used to hold the roast to the rack of rib bones. Remove the bones (you can save them to make stock for soup if you want.) Then, using a sharp carving knife, slice meat across the grain for serving, making the slices about 1/4-1/2 inch thick
       </li>
     </ol>
+  </section>
+
+  <section id="reviews">
+    <form action="/reviews" method = "post" id="review-form">
+      <label for= "name">Name:</label>
+      <input id = "name" type="text"
+      <label for='rating'> 'Rating' </label>
+      1<input type = "radio", name="rating" value="1" checked>
+      2<input type = "radio", name="rating" value="2" >
+      3<input type = "radio", name="rating" value="3" >
+      4<input type = "radio", name="rating" value="4" >
+      5<input type = "radio", name="rating" value="5" >
+
+      <label for ='cooking expertise>' Cooking Expertise </label>
+      <select name = 'Expertise'>
+        <option value='Select Cooking Expertise' selected disabled="true"> Select Cooking Expertise </option>
+        <option value='Sometimes Cook' > Sometimes Cook </option>
+        <option value='Cook Everyday' > Cook Everyday </option>
+        <option value='Cooking is a hobby' > Cooking is a hobby </option>
+        <option value='Professional chef' > Professional Chef </option>
+      </select>
+
+      <label for ="Review"> Review
+      <textarea name="review" cols="30" rows="10"> </textarea>
+      </label>
+
+      <input type="submit" value="submit review">
+    </form>
   </section>
   <footer>
     <p> <a href="http://www.simplyrecipes.com/recipes/prime_rib/"> Recipe taken from Elise Bauer on simplyrecipes </a> </p>
